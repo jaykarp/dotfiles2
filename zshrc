@@ -63,6 +63,26 @@ source $ZSH/oh-my-zsh.sh
 # Set personal aliases
 
 # aliases
+
+# config
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias vim="nvim"
+
+# get ip
 alias ip="http://ipecho.net/plain; echo"
+
+# list / grep aliases
+alias ll='ls -la'
+alias la='ls -A'
+alias l='ls -CF'
+alias ls='ls -G'
+alias grep='grep --color=auto'
+
+# Fun git aliases
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --max-count=20"
+alias s="echo ''; git status -sb; echo ''"
+
+# Open finder window with f
+alias f='open -a Finder ./'
