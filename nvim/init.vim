@@ -12,6 +12,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Line Numbers
 Plug 'myusuf3/numbers.vim'
 
+" Ackvim
+Plug 'mileszs/ack.vim'
+
 " Nerdtree
 " ctrl m to open windows
 Plug 'scrooloose/nerdtree'
@@ -21,11 +24,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 
 " AutoImports
-" <leader>i = import file 
+" <leader>i = import file
 Plug 'trotzig/import-js'
 
 " Coc Vim
-"
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
@@ -38,12 +40,17 @@ Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color 
 
 call plug#end()
 
-" Color scheme 
+" Color scheme
 colorscheme gruvbox
 set bg=dark
 syntax on
 
-let g:airline_theme='gruvbox'
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='transparent'
+let g:airline#extensions#whitespace#enabled = 1
+
+" UTF8 encoding
 set encoding=UTF-8
 
 " Add extra whitespace on each line
